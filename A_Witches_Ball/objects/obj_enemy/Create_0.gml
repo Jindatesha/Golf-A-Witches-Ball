@@ -10,8 +10,8 @@ target_id = obj_teleporter_guy;
 
 //these do depending on enemy type
 max_health = 3;
-base_move_speed = 0.8;
-move_speed = base_move_speed;
+max_move_speed = 0.8;
+move_speed = max_move_speed;
 
 my_attack_collision_mask = spr_weapon_axe_collision;
 my_attack_range = sprite_get_width(my_attack_collision_mask) * 0.8; //gives us just a bit of leeway room

@@ -1,4 +1,6 @@
 
+
+
 show_debug_overlay(true);
 
 
@@ -69,7 +71,7 @@ sound_vol = 1;
 draw_set_valign(fa_middle);
 
 globalvar font_pad_ver;
-font_pad_ver = 7;
+font_pad_ver = 20;
 
 
 globalvar collision_list;
@@ -136,3 +138,5 @@ round_over = false;
 globalvar stroke_counter;
 stroke_counter = 0;
 
+globalvar game_background_color;
+game_background_color = make_color_rgb(149,191,120);

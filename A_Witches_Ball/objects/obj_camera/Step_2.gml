@@ -10,9 +10,6 @@ if ( window_w != old_window_w or window_h != old_window_h)
 
 
 
-
-
-
 //set position of view
 if(instance_exists(obj_ball))
 {
@@ -20,15 +17,13 @@ if(instance_exists(obj_ball))
 	{		
 		var center_of_player_x = x - view_w/2;
 		var center_of_player_y = y - view_h/2;
-	
 		
 		var to_mouse_dir = point_direction(x,y,cursor_x,cursor_y);
 		var distance_to_mouse = distance_to_point(cursor_x,cursor_y);
 		var radius_around_player = 15;
 		var offset_cursor_x = lengthdir_x(min(radius_around_player,distance_to_mouse),to_mouse_dir);
 		var offset_cursor_y = lengthdir_y(min(radius_around_player,distance_to_mouse),to_mouse_dir);
-		
-		
+			
 		var new_x = round(center_of_player_x + offset_cursor_x);
 		var new_y = round(center_of_player_y + offset_cursor_y);
 	

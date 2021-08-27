@@ -14,7 +14,7 @@ if(show_aim_assist_arrow)
 	var mouse_dir = point_direction(x,y,cursor_x,cursor_y);
 	var mouse_dist_to_ball = point_distance(x,y,cursor_x,cursor_y);
 	var striking_power_ratio = min(mouse_dist_to_ball/max_dist_to_ball,1);
-	var striking_power = striking_power_ratio * base_move_speed;
+	var striking_power = striking_power_ratio * max_move_speed;
 	debug_striking_power_ratio = striking_power_ratio;
 	
 	//draw aim assist arrow	
@@ -93,7 +93,8 @@ if(show_aim_assist_arrow)
 	//reflect 
 	if(col_id != noone)
 	{
-		var collided_normal_vector_array = scr_get_collided_normal(x,y,move_dir,col_id);
+		var collided_normal_vector_array = scr_get_collided_normal(x,y,col_id);
+
 		
 		var projected_vector_array;
 		var projected_scalar = (h_speed * collided_normal_vector_array[0]) + (v_speed * collided_normal_vector_array[1]);
@@ -117,7 +118,7 @@ if(show_aim_assist_arrow)
 	}
 
 
-	//friction
+	//friction 
 	move_speed *= 0.98;
 	
 	

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_solid_walls_hor",
-    "path": "sprites/spr_solid_walls_hor/spr_solid_walls_hor.yy",
+    "name": "spr_solid_wall_base",
+    "path": "sprites/spr_solid_wall_base/spr_solid_wall_base.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "platforms",
-    "path": "folders/Objects/platforms.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_floor",
+  "name": "obj_wall",
   "tags": [],
   "resourceType": "GMObject",
 }

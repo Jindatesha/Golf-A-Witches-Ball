@@ -5,10 +5,7 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_ball_collision_box",
-    "path": "sprites/spr_ball_collision_box/spr_ball_collision_box.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

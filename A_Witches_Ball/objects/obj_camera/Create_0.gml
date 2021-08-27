@@ -26,12 +26,12 @@ force_aspect_ratio = false;//global
 force_scaling_to_whole_numbers = false;//global
 
 //base view size of what camera sees (designing game around)	
-base_game_window_resolution_w = 1920/4;
-base_game_window_resolution_h = 1080/4;
+base_game_window_resolution_w = 1080;
+base_game_window_resolution_h = 1920;
 
 //cached values for checking window scaling changes per frame if !in_fullscreen
-old_window_w = base_game_window_resolution_w * 3;//display_get_width();
-old_window_h = base_game_window_resolution_h * 3;//display_get_height();
+old_window_w = base_game_window_resolution_w * 0.5;//display_get_width();
+old_window_h = base_game_window_resolution_h * 0.5;//display_get_height();
 
 //these are for an overlay of a black bar because GUI layer can bleed* into the black bars...for a cool effect but if unintended this will fix
 left_right_black_bar_w = 0;

@@ -57,15 +57,14 @@ function scr_change_screen_resolution(window_resolution_w,window_resolution_h)
 		var new_view_scale_h = (window_resolution_h/ideal_h);
 		
 		//this retains the aspect ratio 
-		if (current_pixel_scaling_type == PIXEL_SCALING_TYPE.BASE_MAINTAIN or current_pixel_scaling_type == PIXEL_SCALING_TYPE.NEW_MAINTAIN)
+		if(current_pixel_scaling_type == PIXEL_SCALING_TYPE.BASE_MAINTAIN or current_pixel_scaling_type == PIXEL_SCALING_TYPE.NEW_MAINTAIN)
 		{
 
 			//if (force_scaling_to_whole_numbers)
 			
 			new_view_scale_w = round(new_view_scale_w);
 			new_view_scale_h = round(new_view_scale_h);
-			
-			
+						
 			
 			//what changed more the width of the window or the height?					
 			if (new_view_scale_w > new_view_scale_h)

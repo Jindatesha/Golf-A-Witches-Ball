@@ -88,6 +88,9 @@ all_structures_grid = ds_grid_create(0,0);
 globalvar game_status;
 game_status = GAME_STATUS.ACTIVE;
 
+globalvar has_finished_level_intro;
+has_finished_level_intro = false;
+
 
 #region buttons
 	//get button inputs
@@ -133,10 +136,24 @@ instance_create_depth(x,y,depth,obj_utility_collision);
 room_goto(room_main_menu);
 
 
-globalvar round_over;
-round_over = false;
+globalvar just_finished_level;
+just_finished_level = false;
 globalvar stroke_counter;
 stroke_counter = 0;
 
 globalvar game_background_color;
 game_background_color = make_color_rgb(149,191,120);
+
+globalvar ball_is_on_field;
+ball_is_on_field = true;
+
+globalvar players_max_move_speed;
+players_max_move_speed = 37.5;
+globalvar to_be_in_hole_speed_entry_threshold; 
+to_be_in_hole_speed_entry_threshold = players_max_move_speed * 0.07;
+
+globalvar golf_ball_texture_surf;
+golf_ball_texture_surf = surface_create(sprite_get_width(spr_ball_base),sprite_get_width(spr_ball_base));
+
+
+

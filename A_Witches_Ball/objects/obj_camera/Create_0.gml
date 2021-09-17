@@ -1,5 +1,5 @@
 //this obj controls our camera, how much we see in room, resolution, pan speed
-
+max_path_speed = 55;
 
 //for (enum)PIXEL_SCALING_TYPE...we can:
 

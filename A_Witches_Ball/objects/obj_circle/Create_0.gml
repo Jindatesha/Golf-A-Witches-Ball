@@ -1,0 +1,1 @@
+my_color = c_red;

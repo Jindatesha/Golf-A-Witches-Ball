@@ -1,5 +1,8 @@
-if(other.move_speed <= other.max_move_speed * 0.07)
+
+if(just_finished_level == false and other.move_speed <= to_be_in_hole_speed_entry_threshold)
 {
-	obj_game.round_over = true;
-	obj_game.alarm[1] = 1;
+	just_finished_level = true;
+	obj_game.alarm[1] = room_speed * 2;
 }
+
+

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_solid_walls_hor",
-    "path": "sprites/spr_solid_walls_hor/spr_solid_walls_hor.yy",
+    "name": "spr_solid_wall_base_down",
+    "path": "sprites/spr_solid_wall_base_down/spr_solid_wall_base_down.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

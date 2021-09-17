@@ -1,0 +1,1 @@
+has_created_hole_collider = false;

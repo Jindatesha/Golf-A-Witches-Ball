@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Meta",
-    "path": "folders/Sprites/Meta.yy",
+    "name": "Level objects",
+    "path": "folders/Sprites/Level objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hole",
